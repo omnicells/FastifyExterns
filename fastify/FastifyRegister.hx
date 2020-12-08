@@ -1,0 +1,8 @@
+package fastify;
+
+/**
+	FastifyRegister
+	
+	Function for adding a plugin to fastify. The options are inferred from the passed in FastifyPlugin parameter.
+**/
+typedef FastifyRegister<T> = ts.AnyOf6<(plugin:FastifyPluginCallback<Any, Dynamic>) -> T, (plugin:FastifyPluginCallback<Any, Dynamic>, opts:ts.AnyOf2<() -> Dynamic, Dynamic>) -> T, (plugin:FastifyPluginAsync<Any, Dynamic>) -> T, (plugin:FastifyPluginAsync<Any, Dynamic>, opts:ts.AnyOf2<() -> Dynamic, Dynamic>) -> T, (plugin:ts.AnyOf4<FastifyPluginCallback<Any, Dynamic>, FastifyPluginAsync<Any, Dynamic>, js.lib.Promise<{ @:native("default") dynamic function default_(instance:FastifyInstance<Dynamic, Dynamic, Dynamic, FastifyLoggerInstance>, opts:Any, next:ts.AnyOf2<() -> Void, (err:js.lib.Error) -> Void>):Void; }>, js.lib.Promise<{ @:native("default") dynamic function default_(instance:FastifyInstance<Dynamic, Dynamic, Dynamic, FastifyLoggerInstance>, opts:Any):js.lib.Promise<Void>; }>>) -> T, (plugin:ts.AnyOf4<FastifyPluginCallback<Any, Dynamic>, FastifyPluginAsync<Any, Dynamic>, js.lib.Promise<{ @:native("default") dynamic function default_(instance:FastifyInstance<Dynamic, Dynamic, Dynamic, FastifyLoggerInstance>, opts:Any, next:ts.AnyOf2<() -> Void, (err:js.lib.Error) -> Void>):Void; }>, js.lib.Promise<{ @:native("default") dynamic function default_(instance:FastifyInstance<Dynamic, Dynamic, Dynamic, FastifyLoggerInstance>, opts:Any):js.lib.Promise<Void>; }>>, opts:ts.AnyOf2<() -> Dynamic, Dynamic>) -> T>;
