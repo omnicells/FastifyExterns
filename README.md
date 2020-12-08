@@ -4,7 +4,7 @@ Generated from **[fastify v3.8.0](https://www.fastify.io/)** by **[dts2hx](https
 
 	dts2hx fastify
 
-## Dependencies
+## Dependencies (included)
 - light-my-request
 - ajv
 - fastify-error
