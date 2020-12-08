@@ -1,4 +1,4 @@
-# Haxe Externs for fastify
+# Working Haxe Externs for fastify
 
 Generated from **[fastify v3.8.0](https://www.fastify.io/)** by **[dts2hx](https://github.com/haxiomic/dts2hx) 0.15.3** using **TypeScript 3.7.4** with arguments:
 
