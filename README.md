@@ -38,6 +38,8 @@ class Main
 	new Main();
     }
     
+    public var server = Fastify.fastify(); 
+    
     public function new() { 
 	server.get('/', function(request, response) {
 		response.header('Access-Control-Allow-Origin', '*');
