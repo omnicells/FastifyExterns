@@ -51,8 +51,8 @@ class Main
 			Sys.exit(null);
             	}
 		trace('listening on port $port'); 
-        }); 
-    }
+        });
+}
 ```
 Hxml file: 
 ```Haxe
