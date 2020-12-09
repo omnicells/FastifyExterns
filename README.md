@@ -52,6 +52,7 @@ class Main
             	}
 		trace('listening on port $port'); 
         });
+    }
 }
 ```
 Hxml file: 
