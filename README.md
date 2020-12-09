@@ -25,3 +25,32 @@ Manuel Spigolon
 - [Denis Fäcke](https://github.com/SerayaEryn)
 - [Igor Savin](https://github.com/kibertoad)
 - [Vincent Le Goff](https://github.com/zekth)
+## Usage
+I was having problems with the automatically generated verisons of externs that dts2hx provides, after some testing I finally found externs that worked and with a little bit of tweaking got it fully working almost identical syntax wise to actual fastify examples can be shown here. 
+```
+import Fastify; 
+
+class Main
+{
+    public static var port = 9000;
+
+    static function main() {
+	new Main();
+    }
+    
+    public function new() { 
+	server.get('/', function(request, response) {
+		response.header('Access-Control-Allow-Origin', '*');
+		response.code(200); 
+		response.send("fastify"); 
+		return null; 
+	});
+    	server.listen(port, "127.0.0.1", function(error, address) {
+            	if (error != null) {
+			trace('failed to listen on port $port'); 
+			Sys.exit(null);
+            	}
+		trace('listening on port $port'); 
+        }); 
+    }
+```
