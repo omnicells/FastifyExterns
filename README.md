@@ -49,7 +49,7 @@ class Main
 	});
     	server.listen(port, "127.0.0.1", function(error, address) {
             	if (error != null) {
-			trace('failed to listen on port $port'); 
+			trace('$error'); 
 			Sys.exit(null);
             	}
 		trace('listening on port $port'); 
