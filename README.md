@@ -54,3 +54,11 @@ class Main
         }); 
     }
 ```
+Hxml file: 
+```Haxe
+-D js-es=6
+-cp externs/FastifyExterns
+-cp externs/FastifyExterns/lmr
+-cp externs/FastifyExterns/ajv
+-main Main
+```
