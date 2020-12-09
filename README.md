@@ -27,7 +27,7 @@ Manuel Spigolon
 - [Vincent Le Goff](https://github.com/zekth)
 ## Usage
 I was having problems with the automatically generated verisons of externs that dts2hx provides, after some testing I finally found externs that worked and with a little bit of tweaking got it fully working almost identical syntax wise to actual fastify examples can be shown here. 
-```
+```Haxe
 import Fastify; 
 
 class Main
