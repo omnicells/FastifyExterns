@@ -67,7 +67,7 @@ Hxml file:
 ```
 Note: Since all requests with these externs require returns you might be wondering how to use async requests as you will get a response from the server before most async functions are computed, simply just return a callback function and use response.send in there like so
 ```Haxe
-return callback(function(callback/*can be string bool or any value you want processed async*/) { 
+return callback(function(callback/*can be string, bool or any value you want processed async*/) { 
 	response.code(200);
 	response.send(callback);
 });
